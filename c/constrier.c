@@ -44,3 +44,11 @@ LinkList *get_linklist(){
     list->len = 0;
     return list;
 };
+
+ArrayList *get_arraylist(int len){
+    ArrayList *list = malloc(sizeof(ArrayList));
+    list->len = 0;
+    list->cap = len;
+    list->array = malloc(sizeof(void*) * len);
+    return list;
+};

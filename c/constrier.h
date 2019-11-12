@@ -13,11 +13,19 @@ typedef struct LinkList{
     void *end_node;
 }LinkList;
 
+typedef struct ArrayList{
+    int len;
+    int cap;
+    long *array;
+}ArrayList;
+
 int insert_to_linklist(int i, void *obj, LinkList *list);
 
 int append_to_linklist(void *obj, LinkList *list);
 
 LinkList *get_linklist();
+
+ArrayList *get_arraylist(int len);
 
 
 #endif
