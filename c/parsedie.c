@@ -1,7 +1,7 @@
 #include "parsedie.h"
 
 int _init_dies(LinkList *list, LinkList *struct_list,
- 				LinkList *typdef_list, ArrayList *all_dies);
+ 			LinkList *typdef_list, ArrayList *all_dies);
 
 
 
