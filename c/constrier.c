@@ -47,8 +47,8 @@ LinkList *get_linklist(){
 
 ArrayList *get_arraylist(int len){
     ArrayList *list = malloc(sizeof(ArrayList));
-    list->len = 0;
-    list->cap = len;
+    list->len = len;
     list->array = malloc(sizeof(void*) * len);
     return list;
 };
+

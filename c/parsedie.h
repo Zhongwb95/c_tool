@@ -4,8 +4,5 @@
 
 int parse_die(LinkList *list);
 
-int _init_dies(LinkList *list, LinkList *struct_list,
-               LinkList *typdef_list, ArrayList *all_dies);
-
 
 #endif

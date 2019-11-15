@@ -15,8 +15,7 @@ typedef struct LinkList{
 
 typedef struct ArrayList{
     int len;
-    int cap;
-    long *array;
+    void **array;
 }ArrayList;
 
 int insert_to_linklist(int i, void *obj, LinkList *list);
@@ -27,6 +26,7 @@ LinkList *get_linklist();
 
 ArrayList *get_arraylist(int len);
 
+// void *get_node(int index, ArrayList *list)
 
 #endif
 
